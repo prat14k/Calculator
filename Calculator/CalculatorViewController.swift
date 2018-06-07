@@ -10,85 +10,115 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
 
-    let maxDigits = 25
+    static private let maxDigits = 15
+    private let maxDigitsReachedError = (title: "Max digits Reached", message: "You are allowed to enter only \(maxDigits) digits at max")
+    
     
     override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
-    @IBOutlet weak var inputTextField: UITextField!
     
-    var isTyping = false
+    @IBOutlet private var inputButtons: [UIButton]!
     
-    @IBAction func digitsPressAction(_ sender: UIButton) {
-        let digit = sender.currentTitle!
-        inputTextField.text = isTyping ? inputTextField.text! + digit : digit
+    @IBOutlet weak private var inputTextField: UITextField!
+    @IBOutlet weak private var decimalButton: UIButton!
+    @IBOutlet private var operationButtons: [UIButton]!
+    
+    private var isTyping = false
+    
+    private var calciModel = CalculatorModel()
+    
+    private var isDecimalButtonEnabled = true {
+        didSet {
+            decimalButton.isEnabled = isDecimalButtonEnabled
+            decimalButton.alpha = isDecimalButtonEnabled ? 1 : 0.7
+        }
+    }
+    
+    
+    private func updateOperationButtonsAlpha() {
+        for button in operationButtons {
+            button.alpha = 1
+        }
+    }
+    
+    private var displayValue : Double{
+        get{
+            return Double(inputTextField.text!) ?? 0
+        }
+        set {
+            inputTextField.text = "\(newValue)"
+            isTyping = false
+            isDecimalButtonEnabled = true
+        }
+    }
+
+    private func pushOperation(symbol: String) -> Bool {
+        let result = calciModel.performOperations(symbol: symbol)
+        if !result.errorOccured {
+            isTyping = false
+            isDecimalButtonEnabled = true
+            if let output = result.output {
+                displayValue = output
+            }
+        }
+        else {
+            displayValue = 0
+            return false
+        }
+        return true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        setButtonsCircular()
+    }
+    
+    func setButtonsCircular() {
+        for button in inputButtons {
+            button.layer.masksToBounds = true
+            button.layer.cornerRadius = button.frame.size.height / 2.0
+        }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        setButtonsCircular()
+    }
+}
+
+extension CalculatorViewController {
+    
+    @IBAction private func digitsPressAction(_ sender: UIButton) {
+        let text = isTyping ? inputTextField.text! + sender.currentTitle! : sender.currentTitle!
+        guard text.count < CalculatorViewController.maxDigits
+        else {
+                return presentAlert(title: maxDigitsReachedError.title, message: maxDigitsReachedError.message)
+        }
+        inputTextField.text = text
         isTyping = true
     }
     
-    var calciModel = CalculatorModel()
-    
-    @IBAction func operateAction(_ sender: UIButton) {
-        
-        print(calciModel.operationStack)
-        print(calciModel.operandStack)
-        if isTyping {
-            calciModel.pushOperand(operand: displayValue)
-        }
-        
-        print(calciModel.operationStack)
-        print(calciModel.operandStack)
-        
-        if let operation = sender.currentTitle{
-            let result = calciModel.performOperations(symbol: operation)
-            if !result.errorOccured {
-                if let res = result.result { displayValue = res }
-            }
-            else {
-                displayValue = 0
-            }
-        }
-        
-        print(calciModel.operationStack)
-        print(calciModel.operandStack)
+    @IBAction private func decimalPressAction(_ sender: UIButton) {
+        inputTextField.text = isTyping ? inputTextField.text! + "." : "0."
+        isTyping = true
+        isDecimalButtonEnabled = false
     }
     
+    @IBAction private func operateAction(_ sender: UIButton) {
+        updateOperationButtonsAlpha()
+        isTyping ? calciModel.pushOperand(operand: displayValue) : ()
+        guard let operationSymbol = sender.currentTitle  else { return }
+        sender.alpha = pushOperation(symbol: operationSymbol) ? 0.7 : 1
+    }
     
-    
-    
-    @IBAction func enterAction() {
-        isTyping = false
-        
-        
-        print(calciModel.operationStack)
-        print(calciModel.operandStack)
-        
+    @IBAction private func enterAction() {
+        updateOperationButtonsAlpha()
         calciModel.pushOperand(operand: displayValue)
-        
-        
-        print(calciModel.operationStack)
-        print(calciModel.operandStack)
-        
-        if let result = calciModel.evaluateAll() {
-            displayValue = result
-        }
-        else{
-            displayValue = 0
-            
-        }
-        
-        print(calciModel.operationStack)
-        print(calciModel.operandStack)
-    }
-    var displayValue : Double{
-        get{
-            return Double(inputTextField.text!)!
-        }
-        set{
-            inputTextField.text = "\(newValue)"
-            isTyping = false
-        }
+        displayValue = calciModel.evaluateAll() ?? 0
     }
     
-    @IBAction func clearAllOperations() {
-        inputTextField.text = "0"
+    @IBAction private func clearAllOperations() {
+        displayValue = 0
     }
     
 }
