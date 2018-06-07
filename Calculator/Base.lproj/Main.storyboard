@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculator View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,6 +34,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7M0-TV-j2r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taN-3U-JOm">
                                 <rect key="frame" x="252" y="347.5" width="48" height="48.5"/>
@@ -50,6 +53,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ig6-Sh-cCJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-7a-dPg">
                                 <rect key="frame" x="252" y="411" width="48.5" height="49"/>
@@ -66,6 +72,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKN-r0-5GF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BE-81-RqD">
                                 <rect key="frame" x="252" y="284" width="48" height="48.5"/>
@@ -82,6 +91,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSl-yF-cHU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-Ik-itY">
                                 <rect key="frame" x="252" y="154" width="48.5" height="48.5"/>
@@ -98,6 +110,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="enterAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="7YQ-Qt-JLy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kF4-6O-yt9">
                                 <rect key="frame" x="148" y="347.5" width="48.5" height="48.5"/>
@@ -114,6 +129,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pr2-Sz-pY7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gis-h0-Gmg">
                                 <rect key="frame" x="148" y="284" width="48.5" height="48.5"/>
@@ -130,6 +148,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMO-a5-3VS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLS-eG-Ven">
                                 <rect key="frame" x="148" y="220" width="48.5" height="49"/>
@@ -146,6 +167,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6WD-Xe-nje"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywL-aL-blp">
                                 <rect key="frame" x="84" y="348" width="49" height="49"/>
@@ -162,6 +186,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqH-Qu-h1x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYB-x0-iwQ">
                                 <rect key="frame" x="84" y="220.5" width="49" height="48.5"/>
@@ -178,6 +205,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVq-0I-L3j"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjG-ME-sB1">
                                 <rect key="frame" x="84" y="284" width="49" height="48.5"/>
@@ -194,6 +224,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASY-YL-D0Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xy-w2-FFA">
                                 <rect key="frame" x="20" y="284" width="49" height="49"/>
@@ -210,6 +243,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHv-Zx-Hwt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfp-FX-Q3P">
                                 <rect key="frame" x="20" y="220.5" width="49" height="49"/>
@@ -226,6 +262,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pa-Aq-0BO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yk-rn-Uuz">
                                 <rect key="frame" x="20" y="348" width="49" height="49"/>
@@ -242,6 +281,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CUL-Q7-T5l"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j69-ou-k4B">
                                 <rect key="frame" x="20" y="154" width="49" height="49"/>
@@ -258,6 +300,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clearAllOperations" destination="BYZ-38-t0r" eventType="touchUpInside" id="xid-sd-Eoa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwA-pw-5ZI">
                                 <rect key="frame" x="20" y="411" width="49" height="48.5"/>
@@ -290,6 +335,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="25S-a0-Xop"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA2-CZ-mXT">
                                 <rect key="frame" x="327" y="177.5" width="51.5" height="51"/>
@@ -307,7 +355,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKU-J8-OKN">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKU-J8-OKN">
                                 <rect key="frame" x="20" y="40" width="280" height="94"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -479,18 +527,18 @@
                                 <exclude reference="KAE-sJ-uU7"/>
                                 <exclude reference="qAL-Oo-Fmv"/>
                                 <exclude reference="pnL-bd-HmF"/>
+                                <exclude reference="391-kO-5LU"/>
+                                <exclude reference="GmM-he-73R"/>
+                                <exclude reference="L0W-n6-shf"/>
+                                <exclude reference="aAS-9y-5TM"/>
                                 <exclude reference="8ZB-pu-TZw"/>
                                 <exclude reference="tZt-1W-5ZK"/>
                                 <exclude reference="2Bh-oi-xKv"/>
                                 <exclude reference="4Mc-sl-3vV"/>
-                                <exclude reference="391-kO-5LU"/>
-                                <exclude reference="GmM-he-73R"/>
-                                <exclude reference="L0W-n6-shf"/>
-                                <exclude reference="8mX-Dx-RqC"/>
-                                <exclude reference="KFB-pD-gVY"/>
-                                <exclude reference="aAS-9y-5TM"/>
                                 <exclude reference="mPu-9O-4ii"/>
                                 <exclude reference="wZg-aI-4pH"/>
+                                <exclude reference="8mX-Dx-RqC"/>
+                                <exclude reference="KFB-pD-gVY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -500,12 +548,12 @@
                             <mask key="constraints">
                                 <include reference="KAE-sJ-uU7"/>
                                 <include reference="pnL-bd-HmF"/>
-                                <include reference="tZt-1W-5ZK"/>
-                                <include reference="2Bh-oi-xKv"/>
                                 <include reference="GmM-he-73R"/>
                                 <include reference="L0W-n6-shf"/>
-                                <include reference="8mX-Dx-RqC"/>
+                                <include reference="tZt-1W-5ZK"/>
+                                <include reference="2Bh-oi-xKv"/>
                                 <include reference="wZg-aI-4pH"/>
+                                <include reference="8mX-Dx-RqC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -517,15 +565,18 @@
                             <mask key="constraints">
                                 <include reference="JMP-VH-pP2"/>
                                 <include reference="qAL-Oo-Fmv"/>
+                                <include reference="391-kO-5LU"/>
+                                <include reference="aAS-9y-5TM"/>
                                 <include reference="8ZB-pu-TZw"/>
                                 <include reference="4Mc-sl-3vV"/>
-                                <include reference="391-kO-5LU"/>
-                                <include reference="KFB-pD-gVY"/>
-                                <include reference="aAS-9y-5TM"/>
                                 <include reference="mPu-9O-4ii"/>
+                                <include reference="KFB-pD-gVY"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="vKU-J8-OKN" id="sd6-7Y-u8y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
