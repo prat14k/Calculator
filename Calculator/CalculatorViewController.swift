@@ -24,7 +24,8 @@ class CalculatorViewController: UIViewController {
     
     private var isTyping = false
     
-    private var calciModel = CalculatorModel()
+    private var calculatorModel = CalculatorModel()
+    
     
     private var isDecimalButtonEnabled = true {
         didSet {
@@ -32,14 +33,7 @@ class CalculatorViewController: UIViewController {
             decimalButton.alpha = isDecimalButtonEnabled ? 1 : 0.7
         }
     }
-    
-    
-    private func updateOperationButtonsAlpha() {
-        for button in operationButtons {
-            button.alpha = 1
-        }
-    }
-    
+
     private var displayValue : Double{
         get{
             return Double(inputTextField.text!) ?? 0
@@ -51,8 +45,19 @@ class CalculatorViewController: UIViewController {
         }
     }
 
+}
+
+
+extension CalculatorViewController {
+    
+    private func updateOperationButtonsAlpha() {
+        for button in operationButtons {
+            button.alpha = 1
+        }
+    }
+    
     private func pushOperation(symbol: String) -> Bool {
-        let result = calciModel.performOperations(symbol: symbol)
+        let result = calculatorModel.performOperations(symbol: symbol)
         if !result.errorOccured {
             isTyping = false
             isDecimalButtonEnabled = true
@@ -67,24 +72,26 @@ class CalculatorViewController: UIViewController {
         return true
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+}
+
+
+extension CalculatorViewController {
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         setButtonsCircular()
     }
     
-    func setButtonsCircular() {
-        for button in inputButtons {
+    private func setButtonsCircular() {
+        for case let button as CircledButton in view.subviews {
             button.layer.masksToBounds = true
             button.layer.cornerRadius = button.frame.size.height / 2.0
-        }
+        }        
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        setButtonsCircular()
-    }
 }
+
+
 
 extension CalculatorViewController {
     
@@ -106,15 +113,15 @@ extension CalculatorViewController {
     
     @IBAction private func operateAction(_ sender: UIButton) {
         updateOperationButtonsAlpha()
-        isTyping ? calciModel.pushOperand(operand: displayValue) : ()
+        isTyping ? calculatorModel.pushOperand(operand: displayValue) : ()
         guard let operationSymbol = sender.currentTitle  else { return }
         sender.alpha = pushOperation(symbol: operationSymbol) ? 0.7 : 1
     }
     
     @IBAction private func enterAction() {
         updateOperationButtonsAlpha()
-        calciModel.pushOperand(operand: displayValue)
-        displayValue = calciModel.evaluateAll() ?? 0
+        calculatorModel.pushOperand(operand: displayValue)
+        displayValue = calculatorModel.evaluateAll() ?? 0
     }
     
     @IBAction private func clearAllOperations() {

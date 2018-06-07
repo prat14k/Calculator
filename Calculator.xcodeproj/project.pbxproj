@@ -15,7 +15,7 @@
 		ABC2979E20C8EB6F00B09FFB /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2979D20C8EB6F00B09FFB /* CalculatorModel.swift */; };
 		ABC297A020C91A8D00B09FFB /* StackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2979F20C91A8D00B09FFB /* StackModel.swift */; };
 		ABC297A220C9261200B09FFB /* AlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC297A120C9261200B09FFB /* AlertControllerExtension.swift */; };
-		ABC297A420C9328900B09FFB /* CircledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC297A320C9328900B09FFB /* CircledView.swift */; };
+		ABC297C420C943A300B09FFB /* CircledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC297C320C943A300B09FFB /* CircledButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		ABC2979D20C8EB6F00B09FFB /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 		ABC2979F20C91A8D00B09FFB /* StackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackModel.swift; sourceTree = "<group>"; };
 		ABC297A120C9261200B09FFB /* AlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerExtension.swift; sourceTree = "<group>"; };
-		ABC297A320C9328900B09FFB /* CircledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledView.swift; sourceTree = "<group>"; };
+		ABC297C320C943A300B09FFB /* CircledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircledButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				ABC2979D20C8EB6F00B09FFB /* CalculatorModel.swift */,
 				ABC2979F20C91A8D00B09FFB /* StackModel.swift */,
 				ABC297A120C9261200B09FFB /* AlertControllerExtension.swift */,
-				ABC297A320C9328900B09FFB /* CircledView.swift */,
+				ABC297C320C943A300B09FFB /* CircledButton.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 				ABC297A220C9261200B09FFB /* AlertControllerExtension.swift in Sources */,
 				ABA168CF20C8027E00028007 /* CalculatorViewController.swift in Sources */,
 				ABA168CD20C8027E00028007 /* AppDelegate.swift in Sources */,
-				ABC297A420C9328900B09FFB /* CircledView.swift in Sources */,
+				ABC297C420C943A300B09FFB /* CircledButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

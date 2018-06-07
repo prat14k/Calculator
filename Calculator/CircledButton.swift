@@ -1,5 +1,5 @@
 //
-//  CircledView.swift
+//  CircledButton.swift
 //  Calculator
 //
 //  Created by Prateek Sharma on 6/7/18.
