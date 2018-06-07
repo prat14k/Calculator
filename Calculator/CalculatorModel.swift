@@ -15,10 +15,10 @@ struct CalculatorModel{
     private var operandStack = Stack<Operand>()
 
     private var knownOps = [
-        "+" : Operation(precedence: 1, operation: +), //Uses the infix method
-        "-" : Operation(precedence: 1, operation: -),
-        "/" : Operation(precedence: 2, operation: /),
-        "*" : Operation(precedence: 2, operation: *)
+        "+": Operation(precedence: 1, operation: +), //Uses the infix method
+        "-": Operation(precedence: 1, operation: -),
+        "/": Operation(precedence: 2, operation: /),
+        "*": Operation(precedence: 2, operation: *)
     ]
 
     mutating func evaluate() -> Double? {

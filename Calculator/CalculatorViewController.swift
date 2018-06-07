@@ -34,7 +34,7 @@ class CalculatorViewController: UIViewController {
         }
     }
 
-    private var displayValue : Double{
+    private var displayValue: Double{
         get{
             return Double(inputTextField.text!) ?? 0
         }
@@ -64,8 +64,7 @@ extension CalculatorViewController {
             if let output = result.output {
                 displayValue = output
             }
-        }
-        else {
+        } else {
             displayValue = 0
             return false
         }
@@ -98,9 +97,7 @@ extension CalculatorViewController {
     @IBAction private func digitsPressAction(_ sender: UIButton) {
         let text = isTyping ? inputTextField.text! + sender.currentTitle! : sender.currentTitle!
         guard text.count < CalculatorViewController.maxDigits
-        else {
-                return presentAlert(title: maxDigitsReachedError.title, message: maxDigitsReachedError.message)
-        }
+        else { return presentAlert(title: maxDigitsReachedError.title, message: maxDigitsReachedError.message) }
         inputTextField.text = text
         isTyping = true
     }
