@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,345 +16,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CalculatorViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58L-vb-IkX" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="248.5" y="208.5" width="51.5" height="51.5"/>
-                                <color key="backgroundColor" red="0.76078431369999999" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="58L-vb-IkX" secondAttribute="height" multiplier="1:1" id="nHf-mL-rAo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="+">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7M0-TV-j2r"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taN-3U-JOm" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="248.5" y="342" width="51.5" height="51.5"/>
-                                <color key="backgroundColor" red="0.76078431369999999" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="taN-3U-JOm" secondAttribute="height" multiplier="1:1" id="0U2-UP-LBa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="*">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ig6-Sh-cCJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-7a-dPg" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="248.5" y="408.5" width="52" height="51.5"/>
-                                <color key="backgroundColor" red="0.76078431372549016" green="0.53725490196078429" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="lh1-7a-dPg" secondAttribute="height" multiplier="1:1" id="qBA-jg-WoU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="/">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKN-r0-5GF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BE-81-RqD" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="248.5" y="275" width="51.5" height="52"/>
-                                <color key="backgroundColor" red="0.76078431369999999" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="7BE-81-RqD" secondAttribute="height" multiplier="1:1" id="kgP-qm-8vn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="-">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSl-yF-cHU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-Ik-itY" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="248.5" y="138.5" width="52" height="52"/>
-                                <color key="backgroundColor" red="0.76078431369999999" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="6yc-Ik-itY" secondAttribute="height" multiplier="1:1" id="3pb-xM-RAC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="=">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="enterAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="7YQ-Qt-JLy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kF4-6O-yt9" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="154" y="342" width="52" height="51.5"/>
-                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="kF4-6O-yt9" secondAttribute="height" multiplier="1:1" id="gyu-7d-GWQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="9">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pr2-Sz-pY7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gis-h0-Gmg" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="154" y="275" width="52" height="52"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="gis-h0-Gmg" secondAttribute="height" multiplier="1:1" id="61n-R8-axT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="6">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMO-a5-3VS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLS-eG-Ven" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="154" y="208" width="52" height="52"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="LLS-eG-Ven" secondAttribute="height" multiplier="1:1" id="ppA-2k-KDP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="3">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6WD-Xe-nje"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywL-aL-blp" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="87" y="342.5" width="52" height="52"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ywL-aL-blp" secondAttribute="height" multiplier="1:1" id="uN3-2v-Ez3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="8">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqH-Qu-h1x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYB-x0-iwQ" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="87" y="208.5" width="52" height="51.5"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="hYB-x0-iwQ" secondAttribute="height" multiplier="1:1" id="0zu-cN-On4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="2">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVq-0I-L3j"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjG-ME-sB1" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="87" y="275" width="52" height="52"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="HjG-ME-sB1" secondAttribute="height" multiplier="1:1" id="HWi-Nv-ZJ3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="5">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASY-YL-D0Q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xy-w2-FFA" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="19.5" y="275" width="52.5" height="52.5"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="2Xy-w2-FFA" secondAttribute="height" multiplier="1:1" id="74F-UO-SmX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="4">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHv-Zx-Hwt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfp-FX-Q3P" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="19.5" y="208.5" width="52.5" height="52"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Yfp-FX-Q3P" secondAttribute="height" multiplier="1:1" id="nmz-NI-nEu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="1">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pa-Aq-0BO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yk-rn-Uuz" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="19.5" y="342.5" width="52.5" height="52"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="4yk-rn-Uuz" secondAttribute="height" multiplier="1:1" id="ZFW-Kb-le5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="7">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CUL-Q7-T5l"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j69-ou-k4B" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="20" y="139" width="51.5" height="51.5"/>
-                                <color key="backgroundColor" red="0.84705882352941175" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="j69-ou-k4B" secondAttribute="height" multiplier="1:1" id="4GB-Se-c2t"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="AC">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="clearAllOperations" destination="BYZ-38-t0r" eventType="touchUpInside" id="xid-sd-Eoa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwA-pw-5ZI" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="20" y="408" width="51.5" height="52"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="HwA-pw-5ZI" secondAttribute="height" multiplier="1:1" id="BJE-RI-5M2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title=".">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="decimalPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfI-dm-Z95"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6an-L1-Dai" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="408.5" width="51" height="51"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="6an-L1-Dai" secondAttribute="height" multiplier="1:1" id="5ge-M2-hnF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="0">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="25S-a0-Xop"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NA2-CZ-mXT" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="331" y="190.5" width="47" height="46.5"/>
-                                <color key="backgroundColor" red="0.76078431369999999" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="NA2-CZ-mXT" secondAttribute="height" multiplier="1:1" id="75Q-oo-GMg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKU-J8-OKN">
-                                <rect key="frame" x="30" y="35" width="270" height="94"/>
+                                <rect key="frame" x="30" y="35" width="364.66666666666669" height="187"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="JsT-YG-bUN"/>
@@ -372,154 +38,547 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgC-CA-lxN" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="154.5" y="408.5" width="51" height="51.5"/>
-                                <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rxz-Jk-DHX" userLabel="AC View">
+                                <rect key="frame" x="20" y="252" width="81.666666666666671" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j69-ou-k4B" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.6666666666666714" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="j69-ou-k4B" secondAttribute="height" multiplier="1:1" id="4GB-Se-c2t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearAllOperations" destination="BYZ-38-t0r" eventType="touchUpInside" id="xid-sd-Eoa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="OgC-CA-lxN" secondAttribute="height" multiplier="1:1" id="bGS-YN-cPg"/>
+                                    <constraint firstItem="j69-ou-k4B" firstAttribute="width" relation="lessThanOrEqual" secondItem="Rxz-Jk-DHX" secondAttribute="width" id="4BN-nC-nok"/>
+                                    <constraint firstItem="j69-ou-k4B" firstAttribute="centerY" secondItem="Rxz-Jk-DHX" secondAttribute="centerY" id="G1S-TZ-bKU"/>
+                                    <constraint firstItem="j69-ou-k4B" firstAttribute="centerX" secondItem="Rxz-Jk-DHX" secondAttribute="centerX" id="Jal-Eb-oWy"/>
+                                    <constraint firstItem="j69-ou-k4B" firstAttribute="height" secondItem="Rxz-Jk-DHX" secondAttribute="height" id="hvh-8e-OnR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NY-9J-TWc" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="87" y="139" width="52" height="51.5"/>
-                                <color key="backgroundColor" red="0.84705882349999995" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSL-6T-7C6" userLabel="+ View">
+                                <rect key="frame" x="312.66666666666669" y="348" width="81.333333333333314" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58L-vb-IkX" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.76078431369999999" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="58L-vb-IkX" secondAttribute="height" multiplier="1:1" id="nHf-mL-rAo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7M0-TV-j2r"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="9NY-9J-TWc" secondAttribute="height" multiplier="1:1" id="8tZ-xO-uZm"/>
+                                    <constraint firstItem="58L-vb-IkX" firstAttribute="width" relation="lessThanOrEqual" secondItem="nSL-6T-7C6" secondAttribute="width" id="0Ai-nm-WYe"/>
+                                    <constraint firstItem="58L-vb-IkX" firstAttribute="centerX" secondItem="nSL-6T-7C6" secondAttribute="centerX" id="SLx-lN-R0j"/>
+                                    <constraint firstItem="58L-vb-IkX" firstAttribute="centerY" secondItem="nSL-6T-7C6" secondAttribute="centerY" id="v4d-lN-hPg"/>
+                                    <constraint firstItem="58L-vb-IkX" firstAttribute="height" secondItem="nSL-6T-7C6" secondAttribute="height" id="vUm-TL-ylW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3w-hb-cP4" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="154" y="139" width="52" height="51.5"/>
-                                <color key="backgroundColor" red="0.84705882349999995" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qpu-Zg-Wz0" userLabel="* View">
+                                <rect key="frame" x="312.66666666666669" y="539.66666666666663" width="81.333333333333314" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taN-3U-JOm" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.76078431369999999" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="taN-3U-JOm" secondAttribute="height" multiplier="1:1" id="0U2-UP-LBa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="*">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ig6-Sh-cCJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="D3w-hb-cP4" secondAttribute="height" multiplier="1:1" id="VPL-v6-v0k"/>
+                                    <constraint firstItem="taN-3U-JOm" firstAttribute="centerX" secondItem="qpu-Zg-Wz0" secondAttribute="centerX" id="2lf-cF-01f"/>
+                                    <constraint firstItem="taN-3U-JOm" firstAttribute="centerY" secondItem="qpu-Zg-Wz0" secondAttribute="centerY" id="Fn8-G5-Ill"/>
+                                    <constraint firstItem="taN-3U-JOm" firstAttribute="width" relation="lessThanOrEqual" secondItem="qpu-Zg-Wz0" secondAttribute="width" id="Sga-mM-zxd"/>
+                                    <constraint firstItem="taN-3U-JOm" firstAttribute="height" secondItem="qpu-Zg-Wz0" secondAttribute="height" id="zEL-7L-rCz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIH-5S-Yd3" userLabel="/ View">
+                                <rect key="frame" x="312.66666666666669" y="635.66666666666663" width="81.333333333333314" height="80.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-7a-dPg" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.76078431372549016" green="0.53725490196078429" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lh1-7a-dPg" secondAttribute="height" multiplier="1:1" id="qBA-jg-WoU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="/">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKN-r0-5GF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lh1-7a-dPg" firstAttribute="width" relation="lessThanOrEqual" secondItem="aIH-5S-Yd3" secondAttribute="width" id="VZJ-u5-TSR"/>
+                                    <constraint firstItem="lh1-7a-dPg" firstAttribute="height" secondItem="aIH-5S-Yd3" secondAttribute="height" id="X0T-35-VmV"/>
+                                    <constraint firstItem="lh1-7a-dPg" firstAttribute="centerX" secondItem="aIH-5S-Yd3" secondAttribute="centerX" id="ZyV-AX-7R5"/>
+                                    <constraint firstItem="lh1-7a-dPg" firstAttribute="centerY" secondItem="aIH-5S-Yd3" secondAttribute="centerY" id="g0o-G8-7D2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xp6-eq-SIx" userLabel="- View">
+                                <rect key="frame" x="312.66666666666669" y="444" width="81.333333333333314" height="80.666666666666629"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BE-81-RqD" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="0.0" width="81" height="80.666666666666671"/>
+                                        <color key="backgroundColor" red="0.76078431369999999" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7BE-81-RqD" secondAttribute="height" multiplier="1:1" id="kgP-qm-8vn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="operateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSl-yF-cHU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7BE-81-RqD" firstAttribute="centerX" secondItem="xp6-eq-SIx" secondAttribute="centerX" id="MV2-hZ-gKd"/>
+                                    <constraint firstItem="7BE-81-RqD" firstAttribute="centerY" secondItem="xp6-eq-SIx" secondAttribute="centerY" id="Rrb-z5-XDW"/>
+                                    <constraint firstItem="7BE-81-RqD" firstAttribute="height" secondItem="xp6-eq-SIx" secondAttribute="height" id="axZ-XS-cr5"/>
+                                    <constraint firstItem="7BE-81-RqD" firstAttribute="width" relation="lessThanOrEqual" secondItem="xp6-eq-SIx" secondAttribute="width" id="kC3-Y9-ZeL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cmc-pf-ycg" userLabel="= View">
+                                <rect key="frame" x="312.66666666666669" y="252" width="81.333333333333314" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-Ik-itY" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.33333333333331439" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.76078431369999999" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6yc-Ik-itY" secondAttribute="height" multiplier="1:1" id="3pb-xM-RAC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="enterAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="7YQ-Qt-JLy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6yc-Ik-itY" firstAttribute="height" secondItem="Cmc-pf-ycg" secondAttribute="height" id="8bi-Ai-pPd"/>
+                                    <constraint firstItem="6yc-Ik-itY" firstAttribute="centerX" secondItem="Cmc-pf-ycg" secondAttribute="centerX" id="iXu-eX-a5J"/>
+                                    <constraint firstItem="6yc-Ik-itY" firstAttribute="width" relation="lessThanOrEqual" secondItem="Cmc-pf-ycg" secondAttribute="width" id="nod-Ot-vqp"/>
+                                    <constraint firstItem="6yc-Ik-itY" firstAttribute="centerY" secondItem="Cmc-pf-ycg" secondAttribute="centerY" id="zRt-qz-CVr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xtb-Rm-tT4" userLabel=". View">
+                                <rect key="frame" x="20" y="635.66666666666663" width="81.666666666666671" height="80.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwA-pw-5ZI" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="-0.66666666666662877" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HwA-pw-5ZI" secondAttribute="height" multiplier="1:1" id="BJE-RI-5M2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="decimalPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfI-dm-Z95"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HwA-pw-5ZI" firstAttribute="width" relation="lessThanOrEqual" secondItem="xtb-Rm-tT4" secondAttribute="width" id="9NW-Ez-23T"/>
+                                    <constraint firstItem="HwA-pw-5ZI" firstAttribute="centerX" secondItem="xtb-Rm-tT4" secondAttribute="centerX" id="Y75-hV-iNw"/>
+                                    <constraint firstItem="HwA-pw-5ZI" firstAttribute="centerY" secondItem="xtb-Rm-tT4" secondAttribute="centerY" id="aij-s3-ep1"/>
+                                    <constraint firstItem="HwA-pw-5ZI" firstAttribute="height" secondItem="xtb-Rm-tT4" secondAttribute="height" id="b6k-bt-hcl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Mn-Jb-AGg" userLabel="9 View">
+                                <rect key="frame" x="213" y="540" width="81.666666666666686" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kF4-6O-yt9" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.66666666666665719" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kF4-6O-yt9" secondAttribute="height" multiplier="1:1" id="gyu-7d-GWQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pr2-Sz-pY7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kF4-6O-yt9" firstAttribute="width" relation="lessThanOrEqual" secondItem="3Mn-Jb-AGg" secondAttribute="width" id="SK5-XO-pJD"/>
+                                    <constraint firstItem="kF4-6O-yt9" firstAttribute="centerY" secondItem="3Mn-Jb-AGg" secondAttribute="centerY" id="f2k-1i-ATr"/>
+                                    <constraint firstItem="kF4-6O-yt9" firstAttribute="height" secondItem="3Mn-Jb-AGg" secondAttribute="height" id="xCH-Bm-ieF"/>
+                                    <constraint firstItem="kF4-6O-yt9" firstAttribute="centerX" secondItem="3Mn-Jb-AGg" secondAttribute="centerX" id="xax-qt-4Yy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qig-Ya-PBq" userLabel="8 View">
+                                <rect key="frame" x="116.66666666666669" y="540" width="81.333333333333314" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywL-aL-blp" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ywL-aL-blp" secondAttribute="height" multiplier="1:1" id="uN3-2v-Ez3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqH-Qu-h1x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ywL-aL-blp" firstAttribute="centerX" secondItem="qig-Ya-PBq" secondAttribute="centerX" id="BXc-Sf-bNh"/>
+                                    <constraint firstItem="ywL-aL-blp" firstAttribute="centerY" secondItem="qig-Ya-PBq" secondAttribute="centerY" id="Fnc-fK-6qQ"/>
+                                    <constraint firstItem="ywL-aL-blp" firstAttribute="height" secondItem="qig-Ya-PBq" secondAttribute="height" id="UFs-eL-WKU"/>
+                                    <constraint firstItem="ywL-aL-blp" firstAttribute="width" relation="lessThanOrEqual" secondItem="qig-Ya-PBq" secondAttribute="width" id="y67-AE-ggv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVj-H1-HTh" userLabel="7 View">
+                                <rect key="frame" x="20" y="540" width="81.666666666666671" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yk-rn-Uuz" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.6666666666666714" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4yk-rn-Uuz" secondAttribute="height" multiplier="1:1" id="ZFW-Kb-le5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CUL-Q7-T5l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4yk-rn-Uuz" firstAttribute="centerX" secondItem="yVj-H1-HTh" secondAttribute="centerX" id="GHb-X7-vt9"/>
+                                    <constraint firstItem="4yk-rn-Uuz" firstAttribute="height" secondItem="yVj-H1-HTh" secondAttribute="height" id="IwI-YO-KEG"/>
+                                    <constraint firstItem="4yk-rn-Uuz" firstAttribute="centerY" secondItem="yVj-H1-HTh" secondAttribute="centerY" id="LUr-Bd-1nk"/>
+                                    <constraint firstItem="4yk-rn-Uuz" firstAttribute="width" relation="lessThanOrEqual" secondItem="yVj-H1-HTh" secondAttribute="width" id="dIc-EX-cA1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kq3-zb-K5u" userLabel="6 View">
+                                <rect key="frame" x="213" y="444" width="81.666666666666686" height="80.666666666666629"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gis-h0-Gmg" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.66666666666665719" y="-0.33333333333331439" width="81" height="80.333333333333329"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gis-h0-Gmg" secondAttribute="height" multiplier="1:1" id="61n-R8-axT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMO-a5-3VS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gis-h0-Gmg" firstAttribute="width" relation="lessThanOrEqual" secondItem="kq3-zb-K5u" secondAttribute="width" id="F3O-eI-sH7"/>
+                                    <constraint firstItem="gis-h0-Gmg" firstAttribute="height" secondItem="kq3-zb-K5u" secondAttribute="height" id="cuI-Ce-zfo"/>
+                                    <constraint firstItem="gis-h0-Gmg" firstAttribute="centerY" secondItem="kq3-zb-K5u" secondAttribute="centerY" id="jhW-3L-7Mq"/>
+                                    <constraint firstItem="gis-h0-Gmg" firstAttribute="centerX" secondItem="kq3-zb-K5u" secondAttribute="centerX" id="uYo-jX-c2X"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g83-BS-ORW" userLabel="5 View">
+                                <rect key="frame" x="116.66666666666669" y="443.66666666666669" width="81.333333333333314" height="80.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjG-ME-sB1" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-0.66666666666668561" width="81" height="80.666666666666671"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HjG-ME-sB1" secondAttribute="height" multiplier="1:1" id="HWi-Nv-ZJ3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASY-YL-D0Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HjG-ME-sB1" firstAttribute="width" relation="lessThanOrEqual" secondItem="g83-BS-ORW" secondAttribute="width" id="IRf-hr-1ai"/>
+                                    <constraint firstItem="HjG-ME-sB1" firstAttribute="height" secondItem="g83-BS-ORW" secondAttribute="height" id="JZm-jg-oOv"/>
+                                    <constraint firstItem="HjG-ME-sB1" firstAttribute="centerY" secondItem="g83-BS-ORW" secondAttribute="centerY" id="UbI-lA-xuh"/>
+                                    <constraint firstItem="HjG-ME-sB1" firstAttribute="centerX" secondItem="g83-BS-ORW" secondAttribute="centerX" id="f8M-fD-ktZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oU1-GL-orT" userLabel="4 View">
+                                <rect key="frame" x="20" y="444" width="81.666666666666671" height="80.666666666666629"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xy-w2-FFA" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.6666666666666714" y="-0.33333333333331439" width="81" height="80.333333333333329"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2Xy-w2-FFA" secondAttribute="height" multiplier="1:1" id="74F-UO-SmX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHv-Zx-Hwt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2Xy-w2-FFA" firstAttribute="width" relation="lessThanOrEqual" secondItem="oU1-GL-orT" secondAttribute="width" id="LTH-0W-Erf"/>
+                                    <constraint firstItem="2Xy-w2-FFA" firstAttribute="centerX" secondItem="oU1-GL-orT" secondAttribute="centerX" id="UBy-Si-lFM"/>
+                                    <constraint firstItem="2Xy-w2-FFA" firstAttribute="height" secondItem="oU1-GL-orT" secondAttribute="height" id="XLV-M9-9K9"/>
+                                    <constraint firstItem="2Xy-w2-FFA" firstAttribute="centerY" secondItem="oU1-GL-orT" secondAttribute="centerY" id="hzg-Li-sLh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNg-PU-TIf" userLabel="3 View">
+                                <rect key="frame" x="213" y="348" width="81.666666666666686" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLS-eG-Ven" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.66666666666665719" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LLS-eG-Ven" secondAttribute="height" multiplier="1:1" id="ppA-2k-KDP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6WD-Xe-nje"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LLS-eG-Ven" firstAttribute="height" secondItem="CNg-PU-TIf" secondAttribute="height" id="XJ1-Bw-fBR"/>
+                                    <constraint firstItem="LLS-eG-Ven" firstAttribute="width" relation="lessThanOrEqual" secondItem="CNg-PU-TIf" secondAttribute="width" id="dEb-Jt-DWo"/>
+                                    <constraint firstItem="LLS-eG-Ven" firstAttribute="centerY" secondItem="CNg-PU-TIf" secondAttribute="centerY" id="qaI-q0-IhA"/>
+                                    <constraint firstItem="LLS-eG-Ven" firstAttribute="centerX" secondItem="CNg-PU-TIf" secondAttribute="centerX" id="wcV-lw-Rxk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxI-RO-Cc9" userLabel="2 View">
+                                <rect key="frame" x="116.66666666666669" y="348.66666666666669" width="81.333333333333314" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYB-x0-iwQ" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hYB-x0-iwQ" secondAttribute="height" multiplier="1:1" id="0zu-cN-On4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVq-0I-L3j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hYB-x0-iwQ" firstAttribute="width" relation="lessThanOrEqual" secondItem="VxI-RO-Cc9" secondAttribute="width" id="2gb-3Z-JFy"/>
+                                    <constraint firstItem="hYB-x0-iwQ" firstAttribute="height" secondItem="VxI-RO-Cc9" secondAttribute="height" id="ELg-hB-Skn"/>
+                                    <constraint firstItem="hYB-x0-iwQ" firstAttribute="centerY" secondItem="VxI-RO-Cc9" secondAttribute="centerY" id="Fmg-r5-0kq"/>
+                                    <constraint firstItem="hYB-x0-iwQ" firstAttribute="centerX" secondItem="VxI-RO-Cc9" secondAttribute="centerX" id="sYt-jp-rlx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cje-0n-cgE" userLabel="1 View">
+                                <rect key="frame" x="20" y="348" width="81.666666666666671" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfp-FX-Q3P" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.6666666666666714" y="0.0" width="81" height="81"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Yfp-FX-Q3P" secondAttribute="height" multiplier="1:1" id="nmz-NI-nEu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pa-Aq-0BO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Yfp-FX-Q3P" firstAttribute="height" secondItem="Cje-0n-cgE" secondAttribute="height" id="KaZ-RS-x9Y"/>
+                                    <constraint firstItem="Yfp-FX-Q3P" firstAttribute="centerY" secondItem="Cje-0n-cgE" secondAttribute="centerY" id="Pkm-YI-ybM"/>
+                                    <constraint firstItem="Yfp-FX-Q3P" firstAttribute="centerX" secondItem="Cje-0n-cgE" secondAttribute="centerX" id="bYi-V2-qWr"/>
+                                    <constraint firstItem="Yfp-FX-Q3P" firstAttribute="width" relation="lessThanOrEqual" secondItem="Cje-0n-cgE" secondAttribute="width" id="xde-OD-HWg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9a-MS-uzW" userLabel="0 View">
+                                <rect key="frame" x="116.66666666666669" y="635" width="81.333333333333314" height="81"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6an-L1-Dai" customClass="CircledButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="81"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6an-L1-Dai" secondAttribute="height" multiplier="1:1" id="5ge-M2-hnF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="digitsPressAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="25S-a0-Xop"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6an-L1-Dai" firstAttribute="width" relation="lessThanOrEqual" secondItem="c9a-MS-uzW" secondAttribute="width" id="Pq1-Ny-dJg"/>
+                                    <constraint firstItem="6an-L1-Dai" firstAttribute="centerY" secondItem="c9a-MS-uzW" secondAttribute="centerY" id="bwy-aB-umI"/>
+                                    <constraint firstItem="6an-L1-Dai" firstAttribute="height" secondItem="c9a-MS-uzW" secondAttribute="height" id="il6-J6-qKF"/>
+                                    <constraint firstItem="6an-L1-Dai" firstAttribute="centerX" secondItem="c9a-MS-uzW" secondAttribute="centerX" id="s9k-9q-TBz"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NA2-CZ-mXT" firstAttribute="width" secondItem="7BE-81-RqD" secondAttribute="width" id="0NY-0l-m1M"/>
-                            <constraint firstItem="HjG-ME-sB1" firstAttribute="centerX" secondItem="ywL-aL-blp" secondAttribute="centerX" id="1TF-jf-LG6"/>
-                            <constraint firstItem="6an-L1-Dai" firstAttribute="centerX" secondItem="HwA-pw-5ZI" secondAttribute="centerX" id="2Bh-oi-xKv"/>
-                            <constraint firstItem="7BE-81-RqD" firstAttribute="top" secondItem="58L-vb-IkX" secondAttribute="bottom" constant="15" id="2jA-Ay-weR">
+                            <constraint firstItem="aIH-5S-Yd3" firstAttribute="height" secondItem="qpu-Zg-Wz0" secondAttribute="height" id="0Gs-ik-98u"/>
+                            <constraint firstItem="g83-BS-ORW" firstAttribute="centerX" secondItem="qig-Ya-PBq" secondAttribute="centerX" id="1TF-jf-LG6"/>
+                            <constraint firstItem="c9a-MS-uzW" firstAttribute="centerX" secondItem="xtb-Rm-tT4" secondAttribute="centerX" id="2Bh-oi-xKv"/>
+                            <constraint firstItem="xp6-eq-SIx" firstAttribute="top" secondItem="nSL-6T-7C6" secondAttribute="bottom" constant="15" id="2jA-Ay-weR">
                                 <variation key="heightClass=compact" constant="15"/>
                             </constraint>
-                            <constraint firstItem="4yk-rn-Uuz" firstAttribute="centerY" secondItem="ywL-aL-blp" secondAttribute="centerY" id="38W-ew-smn"/>
-                            <constraint firstItem="6yc-Ik-itY" firstAttribute="centerX" secondItem="58L-vb-IkX" secondAttribute="centerX" id="391-kO-5LU"/>
-                            <constraint firstItem="6an-L1-Dai" firstAttribute="centerX" secondItem="ywL-aL-blp" secondAttribute="centerX" id="4Mc-sl-3vV"/>
-                            <constraint firstItem="D3w-hb-cP4" firstAttribute="centerY" secondItem="9NY-9J-TWc" secondAttribute="centerY" id="60d-AC-ym8"/>
-                            <constraint firstItem="kF4-6O-yt9" firstAttribute="width" secondItem="taN-3U-JOm" secondAttribute="width" id="6Im-Eh-RwJ"/>
-                            <constraint firstItem="HwA-pw-5ZI" firstAttribute="centerY" secondItem="6an-L1-Dai" secondAttribute="centerY" id="8ZB-pu-TZw"/>
-                            <constraint firstItem="lh1-7a-dPg" firstAttribute="centerY" secondItem="taN-3U-JOm" secondAttribute="centerY" id="8mX-Dx-RqC"/>
-                            <constraint firstItem="Yfp-FX-Q3P" firstAttribute="centerX" secondItem="2Xy-w2-FFA" secondAttribute="centerX" id="A0G-rT-D3g"/>
-                            <constraint firstItem="lh1-7a-dPg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kF4-6O-yt9" secondAttribute="trailing" constant="18" id="A2Z-5F-AgJ">
-                                <variation key="heightClass=compact" constant="35"/>
+                            <constraint firstItem="yVj-H1-HTh" firstAttribute="centerY" secondItem="qig-Ya-PBq" secondAttribute="centerY" id="38W-ew-smn"/>
+                            <constraint firstItem="Cmc-pf-ycg" firstAttribute="centerX" secondItem="nSL-6T-7C6" secondAttribute="centerX" id="391-kO-5LU"/>
+                            <constraint firstItem="c9a-MS-uzW" firstAttribute="centerX" secondItem="qig-Ya-PBq" secondAttribute="centerX" id="4Mc-sl-3vV"/>
+                            <constraint firstItem="3Mn-Jb-AGg" firstAttribute="width" secondItem="qpu-Zg-Wz0" secondAttribute="width" id="6Im-Eh-RwJ"/>
+                            <constraint firstItem="CNg-PU-TIf" firstAttribute="height" secondItem="oU1-GL-orT" secondAttribute="height" id="75M-Fv-nio"/>
+                            <constraint firstItem="xtb-Rm-tT4" firstAttribute="centerY" secondItem="c9a-MS-uzW" secondAttribute="centerY" id="8ZB-pu-TZw"/>
+                            <constraint firstItem="aIH-5S-Yd3" firstAttribute="centerY" secondItem="qpu-Zg-Wz0" secondAttribute="centerY" id="8mX-Dx-RqC"/>
+                            <constraint firstItem="VxI-RO-Cc9" firstAttribute="height" secondItem="CNg-PU-TIf" secondAttribute="height" id="9dA-a2-2ku"/>
+                            <constraint firstItem="Cje-0n-cgE" firstAttribute="centerX" secondItem="oU1-GL-orT" secondAttribute="centerX" id="A0G-rT-D3g"/>
+                            <constraint firstItem="aIH-5S-Yd3" firstAttribute="leading" secondItem="3Mn-Jb-AGg" secondAttribute="trailing" constant="18" id="A2Z-5F-AgJ">
+                                <variation key="heightClass=compact" constant="20"/>
                             </constraint>
-                            <constraint firstItem="Yfp-FX-Q3P" firstAttribute="centerY" secondItem="hYB-x0-iwQ" secondAttribute="centerY" id="BIJ-py-hsC"/>
-                            <constraint firstItem="hYB-x0-iwQ" firstAttribute="width" secondItem="HjG-ME-sB1" secondAttribute="width" id="CEd-Gc-q7V"/>
-                            <constraint firstItem="58L-vb-IkX" firstAttribute="centerX" secondItem="7BE-81-RqD" secondAttribute="centerX" id="F6G-Gw-sBu"/>
-                            <constraint firstItem="taN-3U-JOm" firstAttribute="width" secondItem="lh1-7a-dPg" secondAttribute="width" id="Fay-Al-upD"/>
-                            <constraint firstItem="6an-L1-Dai" firstAttribute="width" secondItem="HwA-pw-5ZI" secondAttribute="width" id="Fe2-5N-aFQ"/>
-                            <constraint firstItem="9NY-9J-TWc" firstAttribute="centerX" secondItem="hYB-x0-iwQ" secondAttribute="centerX" id="Fqf-SQ-z69"/>
-                            <constraint firstItem="7BE-81-RqD" firstAttribute="centerX" secondItem="taN-3U-JOm" secondAttribute="centerX" id="GPh-Rd-uM1"/>
-                            <constraint firstItem="6yc-Ik-itY" firstAttribute="centerY" secondItem="58L-vb-IkX" secondAttribute="centerY" id="GmM-he-73R"/>
-                            <constraint firstItem="gis-h0-Gmg" firstAttribute="centerX" secondItem="kF4-6O-yt9" secondAttribute="centerX" id="J3S-V5-sTI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lh1-7a-dPg" secondAttribute="bottom" constant="20" id="JMP-VH-pP2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="taN-3U-JOm" secondAttribute="bottom" constant="20" id="KAE-sJ-uU7"/>
-                            <constraint firstItem="lh1-7a-dPg" firstAttribute="top" secondItem="taN-3U-JOm" secondAttribute="bottom" constant="15" id="KFB-pD-gVY"/>
-                            <constraint firstItem="6yc-Ik-itY" firstAttribute="centerX" secondItem="lh1-7a-dPg" secondAttribute="centerX" id="L0W-n6-shf"/>
-                            <constraint firstItem="D3w-hb-cP4" firstAttribute="width" secondItem="D3w-hb-cP4" secondAttribute="height" multiplier="1:1" id="L8u-ss-oW6"/>
-                            <constraint firstItem="HjG-ME-sB1" firstAttribute="width" secondItem="ywL-aL-blp" secondAttribute="width" id="LFl-ve-NoD"/>
-                            <constraint firstItem="4yk-rn-Uuz" firstAttribute="width" secondItem="ywL-aL-blp" secondAttribute="width" id="LLG-0r-eeQ"/>
-                            <constraint firstItem="LLS-eG-Ven" firstAttribute="centerY" secondItem="58L-vb-IkX" secondAttribute="centerY" id="LfK-b3-sMD"/>
-                            <constraint firstItem="gis-h0-Gmg" firstAttribute="width" secondItem="kF4-6O-yt9" secondAttribute="width" id="MBB-Io-lhl"/>
-                            <constraint firstItem="j69-ou-k4B" firstAttribute="top" secondItem="vKU-J8-OKN" secondAttribute="bottom" constant="10" id="MIb-st-UKz"/>
-                            <constraint firstItem="kF4-6O-yt9" firstAttribute="centerY" secondItem="taN-3U-JOm" secondAttribute="centerY" id="Om4-Sr-oKf"/>
-                            <constraint firstItem="D3w-hb-cP4" firstAttribute="width" secondItem="9NY-9J-TWc" secondAttribute="width" id="Pfw-Ep-lDO"/>
-                            <constraint firstItem="HwA-pw-5ZI" firstAttribute="width" secondItem="j69-ou-k4B" secondAttribute="width" id="QN6-b6-Cmv"/>
-                            <constraint firstItem="vKU-J8-OKN" firstAttribute="trailing" secondItem="58L-vb-IkX" secondAttribute="trailing" id="RGS-dA-76U"/>
-                            <constraint firstItem="j69-ou-k4B" firstAttribute="centerY" secondItem="6yc-Ik-itY" secondAttribute="centerY" id="RTU-a6-eCI"/>
-                            <constraint firstItem="hYB-x0-iwQ" firstAttribute="centerX" secondItem="HjG-ME-sB1" secondAttribute="centerX" id="Rt9-8X-Wk5"/>
-                            <constraint firstItem="LLS-eG-Ven" firstAttribute="centerX" secondItem="gis-h0-Gmg" secondAttribute="centerX" id="Sx8-Xp-PqZ"/>
-                            <constraint firstItem="OgC-CA-lxN" firstAttribute="centerX" secondItem="kF4-6O-yt9" secondAttribute="centerX" id="T53-KG-ehR"/>
-                            <constraint firstItem="Yfp-FX-Q3P" firstAttribute="width" secondItem="2Xy-w2-FFA" secondAttribute="width" id="Te4-Va-59o"/>
-                            <constraint firstItem="OgC-CA-lxN" firstAttribute="width" secondItem="6an-L1-Dai" secondAttribute="width" id="Til-dp-Spe"/>
-                            <constraint firstItem="j69-ou-k4B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UQa-Xf-zQZ">
-                                <variation key="heightClass=compact" constant="40"/>
+                            <constraint firstItem="Cje-0n-cgE" firstAttribute="centerY" secondItem="VxI-RO-Cc9" secondAttribute="centerY" id="BIJ-py-hsC"/>
+                            <constraint firstItem="VxI-RO-Cc9" firstAttribute="width" secondItem="g83-BS-ORW" secondAttribute="width" id="CEd-Gc-q7V"/>
+                            <constraint firstItem="Rxz-Jk-DHX" firstAttribute="top" secondItem="vKU-J8-OKN" secondAttribute="bottom" constant="30" id="D0E-zL-RxM"/>
+                            <constraint firstItem="nSL-6T-7C6" firstAttribute="centerX" secondItem="xp6-eq-SIx" secondAttribute="centerX" id="F6G-Gw-sBu"/>
+                            <constraint firstItem="qpu-Zg-Wz0" firstAttribute="width" secondItem="aIH-5S-Yd3" secondAttribute="width" id="Fay-Al-upD"/>
+                            <constraint firstItem="c9a-MS-uzW" firstAttribute="width" secondItem="xtb-Rm-tT4" secondAttribute="width" id="Fe2-5N-aFQ"/>
+                            <constraint firstItem="xp6-eq-SIx" firstAttribute="centerX" secondItem="qpu-Zg-Wz0" secondAttribute="centerX" id="GPh-Rd-uM1"/>
+                            <constraint firstItem="Cmc-pf-ycg" firstAttribute="centerY" secondItem="nSL-6T-7C6" secondAttribute="centerY" id="GmM-he-73R"/>
+                            <constraint firstItem="kq3-zb-K5u" firstAttribute="height" secondItem="yVj-H1-HTh" secondAttribute="height" id="IhP-46-saS"/>
+                            <constraint firstItem="kq3-zb-K5u" firstAttribute="centerX" secondItem="3Mn-Jb-AGg" secondAttribute="centerX" id="J3S-V5-sTI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aIH-5S-Yd3" secondAttribute="bottom" constant="20" id="JMP-VH-pP2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qpu-Zg-Wz0" secondAttribute="bottom" constant="20" id="KAE-sJ-uU7"/>
+                            <constraint firstItem="aIH-5S-Yd3" firstAttribute="top" secondItem="qpu-Zg-Wz0" secondAttribute="bottom" constant="15" id="KFB-pD-gVY"/>
+                            <constraint firstItem="Cmc-pf-ycg" firstAttribute="centerX" secondItem="aIH-5S-Yd3" secondAttribute="centerX" id="L0W-n6-shf"/>
+                            <constraint firstItem="g83-BS-ORW" firstAttribute="width" secondItem="qig-Ya-PBq" secondAttribute="width" id="LFl-ve-NoD"/>
+                            <constraint firstItem="yVj-H1-HTh" firstAttribute="width" secondItem="qig-Ya-PBq" secondAttribute="width" id="LLG-0r-eeQ"/>
+                            <constraint firstItem="CNg-PU-TIf" firstAttribute="centerY" secondItem="nSL-6T-7C6" secondAttribute="centerY" id="LfK-b3-sMD"/>
+                            <constraint firstItem="kq3-zb-K5u" firstAttribute="width" secondItem="3Mn-Jb-AGg" secondAttribute="width" id="MBB-Io-lhl"/>
+                            <constraint firstItem="3Mn-Jb-AGg" firstAttribute="centerY" secondItem="qpu-Zg-Wz0" secondAttribute="centerY" id="Om4-Sr-oKf"/>
+                            <constraint firstItem="xtb-Rm-tT4" firstAttribute="width" secondItem="Rxz-Jk-DHX" secondAttribute="width" id="QN6-b6-Cmv"/>
+                            <constraint firstItem="Rxz-Jk-DHX" firstAttribute="centerY" secondItem="Cmc-pf-ycg" secondAttribute="centerY" id="RTU-a6-eCI"/>
+                            <constraint firstItem="VxI-RO-Cc9" firstAttribute="centerX" secondItem="g83-BS-ORW" secondAttribute="centerX" id="Rt9-8X-Wk5"/>
+                            <constraint firstItem="CNg-PU-TIf" firstAttribute="centerX" secondItem="kq3-zb-K5u" secondAttribute="centerX" id="Sx8-Xp-PqZ"/>
+                            <constraint firstItem="Cje-0n-cgE" firstAttribute="width" secondItem="oU1-GL-orT" secondAttribute="width" id="Te4-Va-59o"/>
+                            <constraint firstItem="Rxz-Jk-DHX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UQa-Xf-zQZ">
+                                <variation key="heightClass=compact" constant="25"/>
                             </constraint>
-                            <constraint firstItem="6an-L1-Dai" firstAttribute="centerY" secondItem="lh1-7a-dPg" secondAttribute="centerY" id="Uy9-qy-34g"/>
-                            <constraint firstItem="NA2-CZ-mXT" firstAttribute="centerX" secondItem="6yc-Ik-itY" secondAttribute="centerX" id="WPK-V3-yTy"/>
-                            <constraint firstItem="NA2-CZ-mXT" firstAttribute="centerY" secondItem="7BE-81-RqD" secondAttribute="centerY" id="Xor-P8-UKw"/>
-                            <constraint firstItem="58L-vb-IkX" firstAttribute="width" secondItem="7BE-81-RqD" secondAttribute="width" id="YYm-kh-GlB"/>
-                            <constraint firstItem="58L-vb-IkX" firstAttribute="top" secondItem="6yc-Ik-itY" secondAttribute="bottom" constant="18" id="aAS-9y-5TM"/>
-                            <constraint firstItem="j69-ou-k4B" firstAttribute="width" secondItem="6yc-Ik-itY" secondAttribute="width" id="aab-wo-vRw"/>
-                            <constraint firstItem="taN-3U-JOm" firstAttribute="top" secondItem="7BE-81-RqD" secondAttribute="bottom" constant="15" id="bsj-pI-xMc"/>
-                            <constraint firstItem="ywL-aL-blp" firstAttribute="centerY" secondItem="kF4-6O-yt9" secondAttribute="centerY" id="cqj-Rv-AjV"/>
-                            <constraint firstItem="9NY-9J-TWc" firstAttribute="centerY" secondItem="j69-ou-k4B" secondAttribute="centerY" id="czc-IK-GSh"/>
-                            <constraint firstItem="D3w-hb-cP4" firstAttribute="centerX" secondItem="LLS-eG-Ven" secondAttribute="centerX" id="daP-xm-Ilk"/>
-                            <constraint firstItem="7BE-81-RqD" firstAttribute="width" secondItem="taN-3U-JOm" secondAttribute="width" id="ebL-a4-I3k"/>
-                            <constraint firstItem="2Xy-w2-FFA" firstAttribute="centerY" secondItem="HjG-ME-sB1" secondAttribute="centerY" id="g3Q-Hk-pBn"/>
-                            <constraint firstItem="HjG-ME-sB1" firstAttribute="centerY" secondItem="gis-h0-Gmg" secondAttribute="centerY" id="gsb-4r-bZf"/>
-                            <constraint firstItem="ywL-aL-blp" firstAttribute="leading" secondItem="4yk-rn-Uuz" secondAttribute="trailing" constant="15" id="hmG-yp-XPi">
+                            <constraint firstItem="c9a-MS-uzW" firstAttribute="centerY" secondItem="aIH-5S-Yd3" secondAttribute="centerY" id="Uy9-qy-34g"/>
+                            <constraint firstItem="58L-vb-IkX" firstAttribute="trailing" secondItem="vKU-J8-OKN" secondAttribute="trailing" id="W3i-Z7-PIm"/>
+                            <constraint firstItem="xp6-eq-SIx" firstAttribute="height" secondItem="aIH-5S-Yd3" secondAttribute="height" id="W5n-NI-Qzg"/>
+                            <constraint firstItem="nSL-6T-7C6" firstAttribute="height" secondItem="Rxz-Jk-DHX" secondAttribute="height" id="WXJ-tl-PF0"/>
+                            <constraint firstItem="aIH-5S-Yd3" firstAttribute="width" secondItem="xp6-eq-SIx" secondAttribute="width" id="Xsg-eX-6hQ"/>
+                            <constraint firstItem="nSL-6T-7C6" firstAttribute="width" secondItem="xp6-eq-SIx" secondAttribute="width" id="YYm-kh-GlB"/>
+                            <constraint firstItem="Cmc-pf-ycg" firstAttribute="height" secondItem="xp6-eq-SIx" secondAttribute="height" id="YnR-e6-MQq"/>
+                            <constraint firstItem="nSL-6T-7C6" firstAttribute="top" secondItem="Cmc-pf-ycg" secondAttribute="bottom" constant="15" id="aAS-9y-5TM"/>
+                            <constraint firstItem="oU1-GL-orT" firstAttribute="height" secondItem="g83-BS-ORW" secondAttribute="height" id="aBe-oo-b80"/>
+                            <constraint firstItem="Rxz-Jk-DHX" firstAttribute="width" secondItem="Cmc-pf-ycg" secondAttribute="width" id="aab-wo-vRw"/>
+                            <constraint firstItem="qpu-Zg-Wz0" firstAttribute="top" secondItem="xp6-eq-SIx" secondAttribute="bottom" constant="15" id="bsj-pI-xMc"/>
+                            <constraint firstItem="qpu-Zg-Wz0" firstAttribute="height" secondItem="nSL-6T-7C6" secondAttribute="height" id="cMx-fo-qZW"/>
+                            <constraint firstItem="qig-Ya-PBq" firstAttribute="centerY" secondItem="3Mn-Jb-AGg" secondAttribute="centerY" id="cqj-Rv-AjV"/>
+                            <constraint firstItem="3Mn-Jb-AGg" firstAttribute="height" secondItem="xtb-Rm-tT4" secondAttribute="height" id="dCX-rX-msv"/>
+                            <constraint firstItem="Cje-0n-cgE" firstAttribute="height" secondItem="VxI-RO-Cc9" secondAttribute="height" id="dGW-hb-Suf"/>
+                            <constraint firstItem="xp6-eq-SIx" firstAttribute="width" secondItem="qpu-Zg-Wz0" secondAttribute="width" id="ebL-a4-I3k"/>
+                            <constraint firstItem="oU1-GL-orT" firstAttribute="centerY" secondItem="g83-BS-ORW" secondAttribute="centerY" id="g3Q-Hk-pBn"/>
+                            <constraint firstItem="g83-BS-ORW" firstAttribute="centerY" secondItem="kq3-zb-K5u" secondAttribute="centerY" id="gsb-4r-bZf"/>
+                            <constraint firstItem="qig-Ya-PBq" firstAttribute="leading" secondItem="yVj-H1-HTh" secondAttribute="trailing" constant="15" id="hmG-yp-XPi">
                                 <variation key="heightClass=compact" constant="15"/>
                             </constraint>
-                            <constraint firstItem="9NY-9J-TWc" firstAttribute="width" secondItem="hYB-x0-iwQ" secondAttribute="width" id="ipX-ZU-bD5"/>
-                            <constraint firstItem="2Xy-w2-FFA" firstAttribute="width" secondItem="4yk-rn-Uuz" secondAttribute="width" id="m88-aq-Tir"/>
-                            <constraint firstItem="taN-3U-JOm" firstAttribute="centerX" secondItem="lh1-7a-dPg" secondAttribute="centerX" id="mPu-9O-4ii"/>
-                            <constraint firstItem="2Xy-w2-FFA" firstAttribute="centerX" secondItem="4yk-rn-Uuz" secondAttribute="centerX" id="mWI-xs-4Jr"/>
-                            <constraint firstItem="6yc-Ik-itY" firstAttribute="width" secondItem="58L-vb-IkX" secondAttribute="width" id="nnG-rc-nCY"/>
-                            <constraint firstItem="gis-h0-Gmg" firstAttribute="centerY" secondItem="7BE-81-RqD" secondAttribute="centerY" id="obe-vw-mbh"/>
+                            <constraint firstItem="g83-BS-ORW" firstAttribute="height" secondItem="kq3-zb-K5u" secondAttribute="height" id="jSS-LV-OnO"/>
+                            <constraint firstItem="c9a-MS-uzW" firstAttribute="height" secondItem="Cje-0n-cgE" secondAttribute="height" id="lag-xu-qtR"/>
+                            <constraint firstItem="oU1-GL-orT" firstAttribute="width" secondItem="yVj-H1-HTh" secondAttribute="width" id="m88-aq-Tir"/>
+                            <constraint firstItem="qpu-Zg-Wz0" firstAttribute="centerX" secondItem="aIH-5S-Yd3" secondAttribute="centerX" id="mPu-9O-4ii"/>
+                            <constraint firstItem="oU1-GL-orT" firstAttribute="centerX" secondItem="yVj-H1-HTh" secondAttribute="centerX" id="mWI-xs-4Jr"/>
+                            <constraint firstItem="Cmc-pf-ycg" firstAttribute="width" secondItem="nSL-6T-7C6" secondAttribute="width" id="nnG-rc-nCY"/>
+                            <constraint firstItem="kq3-zb-K5u" firstAttribute="centerY" secondItem="xp6-eq-SIx" secondAttribute="centerY" id="obe-vw-mbh"/>
                             <constraint firstItem="vKU-J8-OKN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="pA4-2E-NZQ"/>
-                            <constraint firstItem="OgC-CA-lxN" firstAttribute="centerY" secondItem="6an-L1-Dai" secondAttribute="centerY" id="pf2-IY-hW5"/>
-                            <constraint firstItem="Yfp-FX-Q3P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="j69-ou-k4B" secondAttribute="trailing" constant="35" id="pnL-bd-HmF"/>
-                            <constraint firstItem="j69-ou-k4B" firstAttribute="centerX" secondItem="Yfp-FX-Q3P" secondAttribute="centerX" id="qAL-Oo-Fmv"/>
-                            <constraint firstItem="ywL-aL-blp" firstAttribute="width" secondItem="kF4-6O-yt9" secondAttribute="width" id="qMz-B1-900"/>
-                            <constraint firstItem="HwA-pw-5ZI" firstAttribute="centerX" secondItem="j69-ou-k4B" secondAttribute="centerX" id="tNe-Ar-x4Y"/>
-                            <constraint firstItem="HwA-pw-5ZI" firstAttribute="centerY" secondItem="2Xy-w2-FFA" secondAttribute="centerY" id="tZt-1W-5ZK"/>
-                            <constraint firstItem="kF4-6O-yt9" firstAttribute="leading" secondItem="ywL-aL-blp" secondAttribute="trailing" constant="15" id="u8T-9o-LrY">
+                            <constraint firstItem="Cje-0n-cgE" firstAttribute="leading" secondItem="Rxz-Jk-DHX" secondAttribute="trailing" constant="20" id="pnL-bd-HmF"/>
+                            <constraint firstItem="Rxz-Jk-DHX" firstAttribute="centerX" secondItem="Cje-0n-cgE" secondAttribute="centerX" id="qAL-Oo-Fmv"/>
+                            <constraint firstItem="qig-Ya-PBq" firstAttribute="width" secondItem="3Mn-Jb-AGg" secondAttribute="width" id="qMz-B1-900"/>
+                            <constraint firstItem="xtb-Rm-tT4" firstAttribute="height" secondItem="Cmc-pf-ycg" secondAttribute="height" id="sIV-9j-3yu"/>
+                            <constraint firstItem="nSL-6T-7C6" firstAttribute="width" secondItem="qpu-Zg-Wz0" secondAttribute="width" id="t8N-sQ-HHM"/>
+                            <constraint firstItem="xtb-Rm-tT4" firstAttribute="centerX" secondItem="Rxz-Jk-DHX" secondAttribute="centerX" id="tNe-Ar-x4Y"/>
+                            <constraint firstItem="xtb-Rm-tT4" firstAttribute="centerY" secondItem="oU1-GL-orT" secondAttribute="centerY" id="tZt-1W-5ZK"/>
+                            <constraint firstItem="3Mn-Jb-AGg" firstAttribute="leading" secondItem="qig-Ya-PBq" secondAttribute="trailing" constant="15" id="u8T-9o-LrY">
                                 <variation key="heightClass=compact" constant="15"/>
                             </constraint>
                             <constraint firstItem="vKU-J8-OKN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="vfz-Ec-630"/>
-                            <constraint firstItem="taN-3U-JOm" firstAttribute="leading" secondItem="lh1-7a-dPg" secondAttribute="trailing" constant="15" id="wZg-aI-4pH"/>
-                            <constraint firstItem="LLS-eG-Ven" firstAttribute="width" secondItem="gis-h0-Gmg" secondAttribute="width" id="y49-C1-h9f"/>
-                            <constraint firstItem="hYB-x0-iwQ" firstAttribute="centerY" secondItem="LLS-eG-Ven" secondAttribute="centerY" id="yxu-wF-Q3P"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="taN-3U-JOm" secondAttribute="trailing" constant="20" id="zUP-dJ-umc">
-                                <variation key="heightClass=compact" constant="40"/>
+                            <constraint firstItem="qpu-Zg-Wz0" firstAttribute="leading" secondItem="aIH-5S-Yd3" secondAttribute="trailing" constant="15" id="wZg-aI-4pH"/>
+                            <constraint firstItem="qig-Ya-PBq" firstAttribute="height" secondItem="3Mn-Jb-AGg" secondAttribute="height" id="xVD-rW-Dae"/>
+                            <constraint firstItem="yVj-H1-HTh" firstAttribute="height" secondItem="qig-Ya-PBq" secondAttribute="height" id="xVt-nW-jl0"/>
+                            <constraint firstItem="CNg-PU-TIf" firstAttribute="width" secondItem="kq3-zb-K5u" secondAttribute="width" id="y49-C1-h9f"/>
+                            <constraint firstItem="VxI-RO-Cc9" firstAttribute="centerY" secondItem="CNg-PU-TIf" secondAttribute="centerY" id="yxu-wF-Q3P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qpu-Zg-Wz0" secondAttribute="trailing" constant="20" id="zUP-dJ-umc">
+                                <variation key="heightClass=compact" constant="25"/>
                             </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="NA2-CZ-mXT"/>
-                                <exclude reference="OgC-CA-lxN"/>
-                                <exclude reference="9NY-9J-TWc"/>
-                                <exclude reference="D3w-hb-cP4"/>
-                            </mask>
                             <mask key="constraints">
                                 <exclude reference="JMP-VH-pP2"/>
                                 <exclude reference="KAE-sJ-uU7"/>
@@ -529,45 +588,37 @@
                                 <exclude reference="GmM-he-73R"/>
                                 <exclude reference="L0W-n6-shf"/>
                                 <exclude reference="aAS-9y-5TM"/>
+                                <exclude reference="mPu-9O-4ii"/>
+                                <exclude reference="wZg-aI-4pH"/>
                                 <exclude reference="8ZB-pu-TZw"/>
                                 <exclude reference="tZt-1W-5ZK"/>
                                 <exclude reference="2Bh-oi-xKv"/>
                                 <exclude reference="4Mc-sl-3vV"/>
-                                <exclude reference="mPu-9O-4ii"/>
-                                <exclude reference="wZg-aI-4pH"/>
                                 <exclude reference="8mX-Dx-RqC"/>
                                 <exclude reference="KFB-pD-gVY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
-                            <mask key="subviews">
-                                <include reference="NA2-CZ-mXT"/>
-                            </mask>
                             <mask key="constraints">
                                 <include reference="KAE-sJ-uU7"/>
                                 <include reference="pnL-bd-HmF"/>
                                 <include reference="GmM-he-73R"/>
                                 <include reference="L0W-n6-shf"/>
+                                <include reference="wZg-aI-4pH"/>
                                 <include reference="tZt-1W-5ZK"/>
                                 <include reference="2Bh-oi-xKv"/>
-                                <include reference="wZg-aI-4pH"/>
                                 <include reference="8mX-Dx-RqC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="OgC-CA-lxN"/>
-                                <include reference="9NY-9J-TWc"/>
-                                <include reference="D3w-hb-cP4"/>
-                            </mask>
                             <mask key="constraints">
                                 <include reference="JMP-VH-pP2"/>
                                 <include reference="qAL-Oo-Fmv"/>
                                 <include reference="391-kO-5LU"/>
                                 <include reference="aAS-9y-5TM"/>
+                                <include reference="mPu-9O-4ii"/>
                                 <include reference="8ZB-pu-TZw"/>
                                 <include reference="4Mc-sl-3vV"/>
-                                <include reference="mPu-9O-4ii"/>
                                 <include reference="KFB-pD-gVY"/>
                             </mask>
                         </variation>
@@ -575,32 +626,28 @@
                     <connections>
                         <outlet property="decimalButton" destination="HwA-pw-5ZI" id="hCt-4j-Qip"/>
                         <outlet property="inputTextField" destination="vKU-J8-OKN" id="sd6-7Y-u8y"/>
-                        <outletCollection property="operationButtons" destination="58L-vb-IkX" collectionClass="NSMutableArray" id="YPG-Au-CQn"/>
-                        <outletCollection property="operationButtons" destination="7BE-81-RqD" collectionClass="NSMutableArray" id="DYW-Tw-EHZ"/>
-                        <outletCollection property="operationButtons" destination="lh1-7a-dPg" collectionClass="NSMutableArray" id="ZZS-dA-mTN"/>
-                        <outletCollection property="operationButtons" destination="taN-3U-JOm" collectionClass="NSMutableArray" id="out-Dm-gBg"/>
+                        <outletCollection property="inputButtons" destination="j69-ou-k4B" collectionClass="NSMutableArray" id="eLb-ic-ZW0"/>
                         <outletCollection property="inputButtons" destination="58L-vb-IkX" collectionClass="NSMutableArray" id="wa8-V4-oTN"/>
                         <outletCollection property="inputButtons" destination="58L-vb-IkX" collectionClass="NSMutableArray" id="fQM-4g-GGr"/>
+                        <outletCollection property="operationButtons" destination="58L-vb-IkX" collectionClass="NSMutableArray" id="YPG-Au-CQn"/>
                         <outletCollection property="inputButtons" destination="taN-3U-JOm" collectionClass="NSMutableArray" id="IPf-kV-M1L"/>
-                        <outletCollection property="inputButtons" destination="6yc-Ik-itY" collectionClass="NSMutableArray" id="4DQ-54-nZC"/>
-                        <outletCollection property="inputButtons" destination="NA2-CZ-mXT" collectionClass="NSMutableArray" id="W91-He-2JH"/>
+                        <outletCollection property="operationButtons" destination="taN-3U-JOm" collectionClass="NSMutableArray" id="out-Dm-gBg"/>
+                        <outletCollection property="operationButtons" destination="lh1-7a-dPg" collectionClass="NSMutableArray" id="ZZS-dA-mTN"/>
                         <outletCollection property="inputButtons" destination="lh1-7a-dPg" collectionClass="NSMutableArray" id="8lN-bn-dl7"/>
-                        <outletCollection property="inputButtons" destination="LLS-eG-Ven" collectionClass="NSMutableArray" id="XxW-2c-8Mc"/>
-                        <outletCollection property="inputButtons" destination="gis-h0-Gmg" collectionClass="NSMutableArray" id="bAf-UB-FuG"/>
-                        <outletCollection property="inputButtons" destination="kF4-6O-yt9" collectionClass="NSMutableArray" id="bXh-7n-GOW"/>
-                        <outletCollection property="inputButtons" destination="hYB-x0-iwQ" collectionClass="NSMutableArray" id="a6F-Cy-hp5"/>
-                        <outletCollection property="inputButtons" destination="HjG-ME-sB1" collectionClass="NSMutableArray" id="z1Q-ch-lvc"/>
-                        <outletCollection property="inputButtons" destination="ywL-aL-blp" collectionClass="NSMutableArray" id="lA2-Zl-3uV"/>
-                        <outletCollection property="inputButtons" destination="Yfp-FX-Q3P" collectionClass="NSMutableArray" id="6hE-fA-OzZ"/>
-                        <outletCollection property="inputButtons" destination="2Xy-w2-FFA" collectionClass="NSMutableArray" id="YqB-p4-qMJ"/>
-                        <outletCollection property="inputButtons" destination="4yk-rn-Uuz" collectionClass="NSMutableArray" id="rnW-ZS-bYd"/>
-                        <outletCollection property="inputButtons" destination="j69-ou-k4B" collectionClass="NSMutableArray" id="eLb-ic-ZW0"/>
-                        <outletCollection property="inputButtons" destination="6an-L1-Dai" collectionClass="NSMutableArray" id="mxf-iJ-NYz"/>
-                        <outletCollection property="inputButtons" destination="HwA-pw-5ZI" collectionClass="NSMutableArray" id="AlQ-E4-WyJ"/>
+                        <outletCollection property="operationButtons" destination="7BE-81-RqD" collectionClass="NSMutableArray" id="DYW-Tw-EHZ"/>
                         <outletCollection property="inputButtons" destination="7BE-81-RqD" collectionClass="NSMutableArray" id="shL-2s-s32"/>
-                        <outletCollection property="inputButtons" destination="D3w-hb-cP4" collectionClass="NSMutableArray" id="68d-vN-OkW"/>
-                        <outletCollection property="inputButtons" destination="9NY-9J-TWc" collectionClass="NSMutableArray" id="BTl-83-Jre"/>
-                        <outletCollection property="inputButtons" destination="OgC-CA-lxN" collectionClass="NSMutableArray" id="R9s-M0-tPD"/>
+                        <outletCollection property="inputButtons" destination="6yc-Ik-itY" collectionClass="NSMutableArray" id="4DQ-54-nZC"/>
+                        <outletCollection property="inputButtons" destination="HwA-pw-5ZI" collectionClass="NSMutableArray" id="AlQ-E4-WyJ"/>
+                        <outletCollection property="inputButtons" destination="kF4-6O-yt9" collectionClass="NSMutableArray" id="bXh-7n-GOW"/>
+                        <outletCollection property="inputButtons" destination="ywL-aL-blp" collectionClass="NSMutableArray" id="lA2-Zl-3uV"/>
+                        <outletCollection property="inputButtons" destination="4yk-rn-Uuz" collectionClass="NSMutableArray" id="rnW-ZS-bYd"/>
+                        <outletCollection property="inputButtons" destination="HjG-ME-sB1" collectionClass="NSMutableArray" id="z1Q-ch-lvc"/>
+                        <outletCollection property="inputButtons" destination="gis-h0-Gmg" collectionClass="NSMutableArray" id="bAf-UB-FuG"/>
+                        <outletCollection property="inputButtons" destination="2Xy-w2-FFA" collectionClass="NSMutableArray" id="YqB-p4-qMJ"/>
+                        <outletCollection property="inputButtons" destination="LLS-eG-Ven" collectionClass="NSMutableArray" id="XxW-2c-8Mc"/>
+                        <outletCollection property="inputButtons" destination="hYB-x0-iwQ" collectionClass="NSMutableArray" id="a6F-Cy-hp5"/>
+                        <outletCollection property="inputButtons" destination="Yfp-FX-Q3P" collectionClass="NSMutableArray" id="6hE-fA-OzZ"/>
+                        <outletCollection property="inputButtons" destination="6an-L1-Dai" collectionClass="NSMutableArray" id="mxf-iJ-NYz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -22,11 +22,4 @@ extension UIAlertController {
     }
 }
 
-extension UIViewController {
-    
-    func presentAlert(title: String?, message: String?) {
-        let controller = UIAlertController.create(title: title, message: message)
-        present(controller, animated: true, completion: nil)
-    }
-    
-}
+

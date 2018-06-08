@@ -16,6 +16,7 @@
 		ABC297A020C91A8D00B09FFB /* StackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2979F20C91A8D00B09FFB /* StackModel.swift */; };
 		ABC297A220C9261200B09FFB /* AlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC297A120C9261200B09FFB /* AlertControllerExtension.swift */; };
 		ABC297C420C943A300B09FFB /* CircledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC297C320C943A300B09FFB /* CircledButton.swift */; };
+		ABD4DC2420CA7DCC0096A2A7 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD4DC2320CA7DCC0096A2A7 /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ABC2979F20C91A8D00B09FFB /* StackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackModel.swift; sourceTree = "<group>"; };
 		ABC297A120C9261200B09FFB /* AlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerExtension.swift; sourceTree = "<group>"; };
 		ABC297C320C943A300B09FFB /* CircledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircledButton.swift; sourceTree = "<group>"; };
+		ABD4DC2320CA7DCC0096A2A7 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				ABC2979F20C91A8D00B09FFB /* StackModel.swift */,
 				ABC297A120C9261200B09FFB /* AlertControllerExtension.swift */,
 				ABC297C320C943A300B09FFB /* CircledButton.swift */,
+				ABD4DC2320CA7DCC0096A2A7 /* ViewControllerExtension.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				ABC297A020C91A8D00B09FFB /* StackModel.swift in Sources */,
 				ABC2979E20C8EB6F00B09FFB /* CalculatorModel.swift in Sources */,
+				ABD4DC2420CA7DCC0096A2A7 /* ViewControllerExtension.swift in Sources */,
 				ABC297A220C9261200B09FFB /* AlertControllerExtension.swift in Sources */,
 				ABA168CF20C8027E00028007 /* CalculatorViewController.swift in Sources */,
 				ABA168CD20C8027E00028007 /* AppDelegate.swift in Sources */,

@@ -82,9 +82,11 @@ extension CalculatorViewController {
     }
     
     private func setButtonsCircular() {
-        for case let button as CircledButton in view.subviews {
-            button.layer.masksToBounds = true
-            button.layer.cornerRadius = button.frame.size.height / 2.0
+        for subView in view.subviews {
+            for case let button as CircledButton in subView.subviews {
+                button.layer.masksToBounds = true
+                button.layer.cornerRadius = subView.frame.size.height / 2.0
+            }
         }        
     }
     
